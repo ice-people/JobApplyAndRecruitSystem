@@ -1,0 +1,244 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    color: #585858;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/*  wrapper */
+.wrapper {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        max-width: 1140px;
+    }
+}
+
+/*  /wrapper */
+
+.d-grid {
+    display: grid;
+}
+
+button,
+input,
+select {
+    outline: none;
+}
+
+button,
+.btn,
+select {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+
+.w3l-signup {
+    position: relative;
+    height: 100vh;
+    background: url(../images/login_bg.jpg) no-repeat 0px 0px;
+    background-size: cover;
+}
+
+.logo {
+    text-align: center;
+}
+
+a.brand-logo {
+    color: #000000;
+    color: #fff;
+    font-size: 42px;
+}
+
+.w3l-signup .overlay {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.44));
+    display: grid;
+    padding: 30px 0px;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.w3l-signup .form-section {
+    max-width: 400px;
+    margin: 30px auto 20px;
+    padding: 2rem 3rem;
+    border-radius: 4px;
+    box-shadow: 0px 9px 24px 5px rgba(0, 0, 0, 0.04);
+    background: #fff;
+}
+
+.w3l-signup .form-section h3 {
+    font-size: 30px;
+    line-height: 40px;
+    color: #090909;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.w3l-signup .form-input input[type="email"],
+.w3l-signup .form-input input[type="password"],
+.w3l-signup .form-input input[type="text"] {
+    background: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 18px;
+    color: #000;
+    -webkit-appearance: none;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.w3l-signup .form-input input[type="email"]:focus,
+.w3l-signup .form-input input[type="password"]:focus,
+.w3l-signup .form-input input[type="text"]:focus {
+    background: #fff;
+    color: #090909;
+    border: 1px solid #35497a;
+    border-radius: 4px;
+}
+
+.w3l-signup .form-input {
+    margin: 10px 0 10px 0;
+    background: rgba(249, 250, 255, 0.09);
+    display: grid;
+    align-items: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+}
+
+.w3l-signup p.signup a {
+    font-weight: bold;
+    color: #35497a;
+}
+
+.w3l-signup p.signup a:hover {
+    text-decoration: underline;
+}
+
+.w3l-signup p.signup {
+    color: #5a5a5a;
+    font-size: 15px;
+    display: block;
+    margin-top: 25px;
+    padding-top: 20px;
+    text-align: center;
+    border-top: 1px solid #dcdcdc;
+}
+
+.w3l-signup .social-icons {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.w3l-signup .continue {
+    position: relative;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.w3l-signup button.btn {
+    opacity: 0.8;
+    width: 100%;
+}
+
+.w3l-signup button.btn:hover {
+    opacity: 1;
+}
+
+.theme-button {
+    transition: 0.3s ease-out;
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #35497a;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+
+/*  copyright */
+.copy-right {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 35px;
+}
+
+.copy-right p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.copy-right p a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.copy-right p a:hover {
+    text-decoration: none;
+}

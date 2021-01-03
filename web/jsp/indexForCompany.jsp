@@ -1,0 +1,122 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: 37.5
+  Date: 2020/12/26
+  Time: 8:30
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<html>
+<head>
+    <title>课设首页</title>
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+    <link type="text/css" rel="stylesheet" href="../css/footer.css" />
+    <script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../js/my.js"></script>
+    <script>
+        window.onload = function () {
+            /* 对“下一页“点击事件 */
+            var nextPage = document.getElementById("next");
+            nextPage.onclick = function () {
+                var page = document.getElementById("currentPage");
+                var currentPage = parseInt(page.innerText);
+                var pages = document.getElementById("pages");
+
+                if (currentPage == parseInt(pages.innerText)){
+                    return;
+                }
+                currentPage++;
+                location.href = "/jobApplyBasicInfo?page="+currentPage;
+            }
+            /* 对”上一页“设置点击事件 */
+            var previousPage = document.getElementById("previous");
+            previousPage.onclick = function () {
+                var currentPage = document.getElementById("currentPage");
+                var currentPage = parseInt(currentPage.innerText);
+                if (currentPage == 1){
+                    return;
+                }
+                currentPage--;
+                location.href = "/jobApplyBasicInfo?page="+currentPage;
+            }
+            /* 对”最后一页“设置点击事件 */
+            var lastPage = document.getElementById("last");
+            lastPage.onclick = function () {
+                var pages = document.getElementById("pages")
+                var page = parseInt(pages.innerText);
+                location.href = "/jobApplyBasicInfo?page="+page;
+            }
+            /* 对”首页“设置点击事件*/
+            var firstPage = document.getElementById("first");
+            firstPage.onclick = function () {
+                location.href = "/jobApplyBasicInfo?page=1";
+            }
+        }
+    </script>
+</head>
+<body>
+<%@ include file="top.jsp"%>
+<div class="loginDiv">
+    <div class="loginL">
+        <img src="../images/LOGO.png" />
+        <img src="../images/view_logo40.png" />
+    </div>
+    <div class="loginAddress">
+        <div class="add1">
+            <span class="span1">河北</span>
+            <span class="span2"></span>
+        </div>
+    </div>
+    <div class="loginR">
+        <img src="../images/spirit_40.png" />
+    </div>
+</div>
+<div class="menuDiv">
+    <a href="javascript:void(0)" class="onnav">首页</a>
+    <a href="javascript:void(0)">招聘</a>
+    <a href="../passApply">个人中心</a>
+    <a href="jsp/recruitInfoWrite.jsp" class="mobile">发布招聘</a>
+</div>
+<div id="main">
+    <div class="navigation">
+        求职信息
+        <div id="readerBlock">欢迎回来&nbsp;:<a href="/book?method=findAllBorrow&page=1">${sessionScope.reader.name3}&nbsp;<a href="/logout">注销</a></div>
+    </div>
+    <div class="img_block">
+        <img src="../images/1.gif" class="img" />
+    </div>
+    <table class="table" cellspacing="0">
+        <tr>
+            <td>期望职位类别</td>
+            <td>期望月薪</td>
+            <td>期望工作地址</td>
+            <td>操作</td>
+        </tr>
+
+        <c:forEach items="${jobApplyBasicInfoList}" var="jobApplyBasicInfo">
+            <tr>
+                <td>${jobApplyBasicInfo.jobApplyType}</td>
+                <td>${jobApplyBasicInfo.jobApplySalary}</td>
+                <td>${jobApplyBasicInfo.jobApplyForAddress}</td>
+                <td>
+                    <a href="/book?method=addBorrow&bookid=${book.id}">详情</a>
+                </td>
+            </tr>
+        </c:forEach>
+
+    </table>
+    <hr class="hr"/>
+    <div id="pageControl">
+        <div class="pageControl_item">每页<font id="dataPrePage">${dataPrePage }</font>条数据</div>
+        <div class="pageControl_item" id="last">最后一页</div>
+        <div class="pageControl_item" id="next">下一页</div>
+        <div class="pageControl_item"><font id="currentPage">${currentPage }</font>/<font id="pages">${pages }</font></div>
+        <div class="pageControl_item" id="previous">上一页</div>
+        <div class="pageControl_item" id="first">首页</div>
+    </div>
+
+</div>
+<%@ include file="footer.jsp" %>
+</body>
+</html>

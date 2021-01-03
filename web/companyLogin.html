@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>招聘</title>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/loginoregister.css" type="text/css" media="all" />
+    <script>
+        window.onload = function () {
+            /* 获取‘个人’单选按钮 */
+            var personalRadio = document.querySelector('input[value="个人"]');
+            personalRadio.onclick = function () {     // 点击‘个人’radio，跳转个人登录界面
+                location.href = 'login.html';
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+<section class="w3l-signup">
+    <div class="overlay">
+        <div class="wrapper">
+            <div class="logo">
+                <a class="brand-logo" href="index.html">招聘</a>
+            </div>
+            <div class="form-section">
+                <h3>登  录</h3>
+
+                <form action="companyLogin" method="post" class="form2">
+                    <div class="form-input">
+                        <input type="text" name="companyName" placeholder="公司名" required="" autofocus>
+                    </div>
+                    <div class="form-input">
+                        <input type="text" name="companyTelephone" placeholder="联系电话" required="" autofocus>
+                    </div>
+                    <div class="form-input">
+                        <input type="password" name="password" placeholder="密码" required="">
+                    </div>
+                    <div>
+                        个人<input type="radio" name="user" value="个人">
+                        公司<input type="radio" name="user" value="公司" checked>
+                    </div>
+                    <button type="submit" class="btn btn-primary theme-button mt-4">登&nbsp;&nbsp;&nbsp;录</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+</body>
+
+</html>

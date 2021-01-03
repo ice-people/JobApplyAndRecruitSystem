@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0}
+ul li{ list-style:none}
+a{ text-decoration:none}
+img{ border:0; max-height:100%; max-width:100%}
+body{ width:100%; min-width:1200px; margin:0 auto; font-size:12px; font-family:"微软雅黑";color: #222;background: #FFF4F0;}
+.clear{ clear:both}
+input{ border:0; outline:0}
+
+.header{height: 85px;width: 100%;background: #fff;border-bottom: #FEE7B1 1px solid;}
+.mainwarp{ width:1000px; margin:0 auto}
+.header .logo{ float:left; margin-top:20px}
+.header .welcome{ float:left; margin-top:20px;height: 40px;border-left: 1px solid #F4F4F4;padding-left: 15px;margin-left: 10px;line-height: 40px;font-size: 22px;color: #5C5C5C;}
+.header .headerright{ float:right;font-size: 14px; margin-top:20px;padding-top: 15px;}
+.header .headerright a{color: #343434;}
+.header .headerright span{color: #DADADA;margin-left: 10px;margin-right: 10px;}
+
+.content{width: 1000px;margin: 40px auto;background: #fff;border: 1px #FEE7B5 solid;margin-top: 50px;height: 500px;margin-top: 20px;}
+.logtype{float: right;width: 53px;height: 53px;background: url(../images/log1.png) no-repeat;cursor: pointer}
+.logtype.on{background: url(../images/log2.png) no-repeat;}
+
+.logoDiv{}
+.logoDiv .logoLeft{ float:left; width:636px}
+.logoDiv .logoLeft .leftimg{ width:601px; margin:0 auto}
+.logoDiv .logoLeft .leftcon{ text-align:center;color: #838385; margin-top:10px}
+.logoDiv .logoLeft .leftcon a{display: inline-block;color: #838385;padding-left: 20px; margin-left: 20px; height:18px}
+.logoDiv .logoLeft .leftcon a.a1{ background:url(../images/log3.png) no-repeat;}
+.logoDiv .logoLeft .leftcon a.a2{ background:url(../images/log4.png) no-repeat;}
+.logoDiv .logoLeft .leftcon a.a3{ background:url(../images/log5.png) no-repeat;}
+.logoDiv .logoRight{ float:left; width: 363px;border-left: 1px solid #E8E8E8;height: 365px;}
+
+.normalLogin{ width:288px; margin:0 auto}
+.normalLogin .username{background:url(../images/log6.png) no-repeat;height: 42px;margin-top: 5px;}
+.normalLogin .username span{background:url(../images/log7.png) no-repeat;width: 51px;height: 40px;float: left;margin-top: 1px;}
+.normalLogin .username input{float: left;background: none;width: 226px;margin-top: 1px;color: #757776;font-size: 14px;padding-left: 10px;line-height: 40px; height: 40px;}
+.normalLogin .password{background:url(../images/log6.png) no-repeat;height: 42px; margin-top: 25px; margin-bottom:25px}
+.normalLogin .password span{background:url(../images/log8.png) no-repeat;width: 51px;height: 40px;float: left;margin-top: 1px;}
+.normalLogin .password input{float: left;background: none;width: 226px;margin-top: 1px;color: #757776;font-size: 14px;padding-left: 10px;line-height: 40px; height: 40px;}
+.normalLogin .autoLogo{font-size: 14px; margin-top:10px}
+.CheckBox{ display:block; float:left;width: 16px;height: 16px; background:url(../images/log11.png) no-repeat;}
+.CheckBox:hover{background:url(../images/log10.png) no-repeat;}
+.CheckBox.Yes{background:url(../images/log9.png) no-repeat;}
+.normalLogin .autoLogo span{vertical-align: middle;font-size: 12px; padding-right:5px}
+.normalLogin .autoLogo span a{ color:#0f72a4}
+.normalLogin .autoLogo a.pasd{ float:right;color: #0485C7;vertical-align: middle; font-size:14px;}
+.normalLogin .logobtn{margin-top: 10px;width: 288px;height: 42px;background: #FF7A4D;font-size: 20px;border-radius: 4px;line-height: 42px; text-align:center}
+.normalLogin .logobtn a{ display:block;color: #FFF;}
+.zcbtn{text-align: center;margin-top: 30px;font-size: 14px;height: 40px;line-height: 40px;border: 1px solid #DFDFDF;border-radius: 4px;}
+.zcbtn a{display:block;color: #9B9B9B;}
+.thirdLogin{color: #676767;margin-top: 15px;font-size: 14px;}
+.thirdLogin .third{ }
+.thirdLogin .third .third_con{float: left;background-color: #FBFBFB;border: 1px #EEEEEE solid;padding: 5px 6px 5px 32px;cursor: pointer; margin-top:10px}
+.thirdLogin .third .third_1{background:url(../images/log12.png) 5px center no-repeat;}
+.thirdLogin .third .third_2{background:url(../images/log13.png) 5px center no-repeat; margin-left:7px}
+.thirdLogin .third .third_3{background:url(../images/log14.png) 5px center no-repeat;margin-left:7px}
+
+.weixinLogin{width:288px; margin:0 auto; display:none}
+.weixinLogin .weixinQr{ text-align:center}
+.weixinLogin .weixinQr img{width: 150px;height: 150px;border: 1px #EAEAEA solid;}
+.weixinLogin .weixinQr p{color: #333333;line-height: 30px;}
+.weixinLogin .weixinQr p.useHelp{background: url(../images/log15.png) 2px 7px no-repeat;color: #FA6803;display: inline-block;padding-left: 17px;cursor: pointer;width: 52px;}
+.usehelpimg{ position:absolute; top:100px; z-index:100; left:50%;opacity: 0;  margin-left: 30px; display:none}
+
+.footer{padding-top: 20px;padding-bottom: 20px; clear: both; margin: 20px auto 0 auto;border-top: 1px #E2E2E2 solid;text-align: center;}
+.footer a{color: #3364cb; padding-left:5px; padding-right:5px}
+
+
+
+/*用户协议*/
+.registerMain{font-size: 12px;line-height: 24px;background-color: #f9eedd;padding: 20px;border: 1px dashed #fe6b07;width: 700px;margin-right: auto;margin-left: auto; margin-top:1px}
+.registerMain h1{color: #FF3300;text-align: center;padding-bottom: 20px;padding-top: 10px;}
+.registerMain span{font-weight: bold;color: #FF3300;margin-left: 20px;}
+.registerMain .con{margin-right: 20px;margin-left: 40px;}
+
+
+/*忘记密码*/
+.passdBox{width: 1000px;margin: 40px auto;background: #fff;border: 1px #FEE7B5 solid;margin-top: 50px;padding-bottom: 50px;}
+.passdBox .passpart1{ width:800px; margin:0 auto}
+.passdBox .passpart1 .TitleNotice{font-family: "微软雅黑"; margin-top: 50px;font-size: 16px;}
+.passdBox .passpart1 .StepsBox{margin-top: 45px;width: 100%;height: 6px;background: #D9D9D9;border-radius: 3px;}
+.passdBox .passpart1 .StepsBox .Step{width: 25%;text-align: center;float: left;}
+.passdBox .passpart1 .StepsBox .Step.Active{height: 6px;background: #00C61B;}
+.passdBox .passpart1 .StepsBox .Step.stepfirst{border-radius:3px 0px 0px 3px;}
+.passdBox .passpart1 .StepsBox .Step.steplast{border-radius:0px 3px 3px 0px;}
+.passdBox .passpart1 .StepsBox .Step.Active .StepNo{background: url(../images/log17.png) no-repeat;}
+.passdBox .passpart1 .StepsBox .Step.Active .StepName{ color:#00C61B}
+.passdBox .passpart1 .StepsBox .Step span{ margin:0 auto; display:block}
+.passdBox .passpart1 .StepsBox .Step .StepNo{width: 23px;background: url(../images/log18.png) no-repeat;height: 23px;line-height: 23px;  top: -8px;position: relative;color: #FFF;font-family: Arial;font-weight: bold;font-size: 14px;}
+.passdBox .passpart1 .StepsBox .Step .StepName{color: #AEAEAE; font-family:"宋体"}
+.passdBox .passpart1 .StepsBox .Step.steplast .StepNo{background: url(../images/log19.png) no-repeat;}
+.passdBox .passpart1 .StepsBox .Step.steplast.Active .StepNo{background: url(../images/log20.png) no-repeat;}
+.passdBox .passpart1 .restInfo{ font-size: 14px; width:326px; margin:0 auto;margin-top:40px;}
+.passdBox .passpart1 .restInfo .box1{ margin-bottom:20px}
+.passdBox .passpart1 .restInfo .box1 span{ display:block; float:left; line-height: 35px;width:70px; text-align:right}
+.passdBox .passpart1 .restInfo .box1  input{display:block; float:left;padding: 0;width: 233px;height: 35px; border: 1px #DBDBDB solid;border-radius: 4px;padding-left: 10px;line-height: 35px; background: none;vertical-align: middle;padding-right: 10px; font-size: 14px;color: #9A9A9C;}
+.passdBox .passpart1 .restInfo .box1  input.yzm{ width:128px;margin-right:5px}
+.passdBox .passpart1 .restInfo .box1  input.onebtn{height: 37px;background: #FF6F3D;color: #FFF;font-size: 16px; border: none;width: 140px;border-radius: 4px;cursor: pointer; margin:0 auto; float:none}
+.passdBox .passpart1 .restInfo .box2{padding: 10px 0px;}
+.passdBox .passpart1 .restInfo b.phonenum{ display:block; font-weight:normal; float:left; width:88px; height:35px; line-height:35px;background: #FFE6D7;color: #EB7351;border: 1px solid #F3CFB7;cursor: pointer;border-radius: 4px; font-size:12px}
+.passdBox .passpart1 .restInfo .box2 span.span1{display:block; float:left; line-height: 35px;width:70px; text-align:right}
+.passdBox .passpart1 .restInfo .box2 span.span2{display:block; float:left;width: 233px;height: 35px;line-height: 35px; }
+.passdBox .passpart1 .restInfo2{ padding-top:70px}
+.passdBox .passpart1 .restInfo2 .SucTitle{font-size: 20px;padding-left: 50px;margin-left: 230px;font-weight: bold;background: url(../images/log21.png) no-repeat;height: 42px; line-height: 42px;}
+.passdBox .passpart1 .restInfo2 p{ font-family: "微软雅黑"; text-align:center;font-size: 14px;margin-top: 15px;}
+.passdBox .passpart1 .restInfo2 a{color: #0f72a4; margin-left:3px}
+
+
+/*注册*/
+.zhuceBox{ width:880px; margin:0 auto;background: #FFF; height:459px;border: 1px solid #FEE7B1;margin-top: 25px;margin-bottom: 50px;font-family: "微软雅黑";}
+.zhuceBox .zcLeft{ float:left; width: 547px;border-right: 1px solid #ccc;height: 100%;}
+.zhuceBox .zcLeft ul#tabzc{}
+.zhuceBox .zcLeft ul#tabzc li{background: #F0F0F0;float: left;width: 273px;height: 52px;line-height: 52px;cursor: pointer;color: #353535;text-align: center;font-size: 16px;border-left: 1px solid #D4D4D4;}
+.zhuceBox .zcLeft ul#tabzc li:first-child{border-left:0}
+.zhuceBox .zcLeft ul#tabzc li.currentzc{ cursor: inherit;background: #fff;}
+.zhuceBox .zcLeft #contentzc{}
+.zhuceBox .zcLeft #contentzc .zcpart1{background:url(../images/log23.png) no-repeat;width:272px;height:37px;margin: 20px auto 0px auto;}
+.zhuceBox .zcLeft #contentzc .zcpart2{width: 272px;margin: 30px 0px 0px 160px;}
+.zcpart2_l{ float:left}
+.zcpart2_l img{border: 1px solid rgb(234, 234, 234);}
+.zcpart2_r{ float:left}
+.zcpart2_r img{ margin-top:35px}
+.zcpart2_c{ margin-top:20px; font-size:12px; font-family:"宋体";}
+.zcpart2_c a{ color: #0f72a4}
+.zhuceBox .zcLeft #contentzc ul{ display:none}
+.zhuceBox .zcLeft #contentzc .zcpart3{width: 265px;height: 20px;margin: 30px auto 0px auto;}
+.zhuceBox .zcLeft #contentzc .zcpart3 .zcstep{display:inline-block;width:35px;height:20px;line-height: 20px;text-align: center; background:#F5F5F5; border:1px solid #E7E7E7}
+.zhuceBox .zcLeft #contentzc .zcpart3 .zcstepGo{ background:url(../images/log25.png) 5px center no-repeat;display: inline-block;width: 12px;height: 20px;vertical-align: middle;}
+.zhuceBox .zcLeft #contentzc .zcpart3 .zcstepLast{display:inline-block;width:85px;height:20px;line-height: 20px;text-align: center; background:#F5F5F5; border:1px solid #E7E7E7}
+.zhuceBox .zcLeft #contentzc .zcpart4{width: 285px;margin: 20px auto;}
+.zhuceBox .zcLeft #contentzc  .zcpart0{margin-left: 105px;}
+.zhuceBox .zcLeft #contentzc .zcpart5{margin-top: 25px;background:url(../images/log6.png) no-repeat;height: 42px;margin-top: 35px; margin-bottom:5px}
+.zhuceBox .zcLeft #contentzc .zcpart5 span{background:url(../images/log7.png) no-repeat;width: 51px;height: 40px;float: left;margin-top: 1px;}
+.zhuceBox .zcLeft #contentzc .zcpart5 input{float: left;background: none;width: 226px;margin-top: 1px;color: #757776;font-size: 14px;padding-left: 10px;line-height: 40px; height: 40px;}
+.zhuceBox .zcLeft #contentzc .zcpart6{margin-left:55px;padding-left: 20px; display:block;background: url(../images/log26.png) no-repeat;display: inline-block;line-height: 16px;color: #757776; height:20px}
+.zhuceBox .zcLeft #contentzc .zcpart7{margin-top: 25px;background:url(../images/log6.png) no-repeat;height: 42px;margin-top: 5px; margin-bottom:5px}
+.zhuceBox .zcLeft #contentzc .zcpart7 span{background:url(../images/log27.png) no-repeat;width: 51px;height: 40px;float: left;margin-top: 1px;}
+.zhuceBox .zcLeft #contentzc .zcpart7 input{float: left;background: none;width: 226px;margin-top: 1px;color: #757776;font-size: 14px;padding-left: 10px;line-height: 40px; height: 40px;}
+.zcpart8{margin-top: 10px;width: 333px;height: 42px;background: #FF7A4D;font-size: 18px;font-family: "微软雅黑"; border-radius: 4px;line-height: 42px; text-align:center}
+.zcpart8 a{ display:block;color: #FFF;}
+.zcpart8.zcpart9{background: #FFF;border: 1px solid #DFDFDF;font-size: 15px;}
+.zcpart9 a{display:block;color: #757776;}
+.zhuceBox .zcRight{ float:left; background:url(../images/log22.png) no-repeat;width: 330px;text-align: center;height: 100%;}
+.zhuceBox .zcRight .topdiv{height: 116px; padding-top: 50px;font-family: 微软雅黑;}
+.zhuceBox .zcRight .topdiv .noPa{font-size: 18px;color: #000;}
+.zhuceBox .zcRight .topdiv a{width: 150px;height: 40px;background: #fa6d01;display: inline-block;line-height: 40px;font-size: 16px;border-radius: 5px; margin-top: 20px; color:#fff}
+
+
+/*简历*/
+.jianliBox{ width:1100px; margin:0 auto;font-family: "微软雅黑";}
+.jianliBox .jlpart1{ margin-top:5px;}
+.jianliBox .jlpart2{background: #FFF;border: 1px solid #FEE7B1;margin-top: 7px;margin-bottom: 50px;}
+.jianliBox .jlpart2 .jlpart2_1{ margin-top:30px;margin-left: 255px;}
+.jlbox1{padding-left: 60px; background:url(../images/log28.png) no-repeat;height: 60px;margin-left: 30px; margin-bottom:20px}
+.jlbox1 h1{font-weight: normal;color: #3EBB3D;font-size: 24px;}
+.jlbox1 p{margin-top: 5px;color: #989898;}
+
+.jlbox2{width: 823px;padding-bottom: 15px; margin-left:30px;font-size: 14px;}
+.jlbox2 span.tit{text-align: right; padding-right: 20px;font-weight: normal;width: 65px; display:block; float:left; line-height:35px}
+.jlbox2 input.txtcon{
+    height: 35px;
+    border: 1px #DBDBDB solid;
+    border-radius: 4px;
+    padding-left: 10px;
+    line-height: 35px;
+    background: none;
+    vertical-align: middle;
+    padding-right: 10px}
+.jlbox2 input.txt1{width: 233px;}
+.jlbox2 .sex{ float:left;width: 47px;height: 32px;line-height: 30px;text-align: center;border: 1px solid #D9DBD8;background: #FFF;border-radius: 2px;cursor: pointer; margin-right: 5px;}
+.jlbox2 .sex.on{background:url(../images/log29.png) no-repeat;color: #0BC10A; border:none;width: 47px;height: 31px;}
+.jlbox2 input.txt2{width: 255px;
+    cursor:pointer}
+.jlbox2 input.txt3{ float:left;width: 255px;}
+.jlbox2 .yzmbtn{ float:left;background: #00CC00;border: 1px solid #00CC00;color: #C8F4C8;width: 98px;height: 35px; line-height:35px;border-radius:0 4px 4px 0; border-left:0; text-align:center}
+.jlbox2 input.txt4{ float:left; width:155px; border-radius:4px 0 0 4px; border-right:0}
+.jlbox2 input.txt5{ float:left;width: 110px;
+    cursor:pointer; margin-left:5px}
+.jlbox2 .titxt{ float:left; line-height:35px; padding-left:5px}
+.jlbox2 input.jlbtn{ margin-top: 10px;width: 255px;height: 38px;background: #FF7A4D;cursor: pointer;color: #FFF;font-size: 18px; border-radius: 4px;line-height: 38px; margin-left:100px; margin-bottom:60px}
+
+
+
+/*企业注册*/
+.headerCom{height: 70px;width: 100%; }
+.headerCom .logo{ float:left; margin-top:15px; height:55px}
+.headerCom .welcome{font-family:"微软雅黑";font-size: 20px;margin-top:15px;line-height: 55px;color: #656565;margin-left: 10px;float: left;}
+.headerCom .headerright{ float:right;margin-top:8px;}
+.headerCom .headerright .r1{ float:left; margin-top:35px;height: 18px;padding-left: 18px;line-height: 15px;background:url(../images/log3.png) no-repeat;}
+.headerCom .headerright a{color: #094EC5; padding-left:4px}
+.headerCom .headerright .r2{ float:left; margin-top:35px;margin-left: 20px;padding-left: 18px;height: 18px;line-height: 15px;background:url(../images/log4.png) no-repeat;}
+.headerCom .headerright .r3{ float:left;background:url(../images/log3.gif) no-repeat;line-height: 16px;margin-left: 20px;padding-left: 20px; margin-top:35px}
+.headerCom .headerright .r4{float:left;background:url(../images/log4.gif) no-repeat;line-height: 16px;margin-left: 20px;padding-left: 20px; margin-top:35px}
+.headerCom .headerright .r3 a,.headerCom .headerright .r4 a{ color:#535353}
+
+.CpRegister{background:url(../images/log2.gif) repeat-x; width:100%}
+.regist1{width: 810px;margin: 0px auto;padding-top: 4px;}
+.regist1 .registL{ padding-left:65px;background: url(../images/log30.png) no-repeat; height: 55px;width: 225px;font-family: "微软雅黑";font-size: 16px;float: left;margin-top: 40px;}
+.regist1 .registL span{color: #0164ca;font-size: 23px;}
+.regist1 .registL p{ margin-top:5px}
+.regist1 .registR{ float:left;width: 516px; height: 172px;}
+.regist2{ width:720px; margin:0 auto; font-family:"宋体"}
+.regist2 .registdiv{ padding-bottom:10px}
+.regist2 .registdiv .registtxt{ float:left; font-size:14px;font-weight: normal;text-align: right;width: 70px;padding-top: 15px;}
+.regist2 .registdiv .registtxt span{color: #fe0003;margin-right: 5px;}
+.regist2 .registdiv .registinput{ float:left;width: 284px;padding:5px 0px 0px 15px;}
+.regist2 .registdiv .registinput input{width: 260px;height: 14px;padding: 10px 5px;border: 1px #CCCCCC solid;}
+.regist2 .registdiv .registsub{ float:left; width:350px; font-size:12px;padding-top: 15px;}
+.regist2 .registdiv .registinput1{ float:left;width: 168px;padding:5px 0px 0px 15px;}
+.regist2 .registdiv .registinput1 input{ float:left;width: 148px;height: 14px;padding: 10px 5px;border: 1px #CCCCCC solid;}
+.regist2 .registdiv .registyzm{float:left;background-color:#227DDA;color:#fff;height:35px;line-height:35px;margin-top:5px;padding:0 10px}
+.regist2 .registdiv .registsub1{float:left; width:350px; font-size:12px; padding-top:4px}
+.regist2 .registdiv .registsub1 .psdbg{background: url(../images/log5.gif) no-repeat 0px -54px; height:20px}
+.regist2 .registdiv .registsub1 span{}
+.regist2 .registdiv0{padding:10px 0}
+.regist2 .registdiv0 input[type=checkbox]{ vertical-align:middle; margin-left:86px}
+.regist2 .registdiv0 a{color: #094EC5;}
+.registdivbtn input{background: url(../images/log6.gif) no-repeat;cursor: pointer;width: 135px;height: 39px;margin-left:86px}
+.regist3{width: 800px;margin: 20px auto;line-height: 20px; font-family:"宋体"}
+.regist3 span{display: inline-block;max-width: 760px;vertical-align: top;line-height: 20px; color:#333}

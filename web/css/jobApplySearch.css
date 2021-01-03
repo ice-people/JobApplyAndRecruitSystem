@@ -1,0 +1,23 @@
+.jobApplySearch{
+    width: 1090px;
+    padding: 24px 0 24px 21px;
+    border: 1px solid #dcdee1;
+    margin-top: 10px;
+    margin-left: 125px;
+    margin-bottom: 10px;
+
+}
+
+.jobApplySearch input{
+   height: 30px;
+    margin-right: 5px;
+}
+.jobApplySearch input:nth-child(3){
+    width: 300px;
+}
+.submit{
+    width: 100px;
+    background-color: #ee7711;
+    color: #FFFFFF;
+    border: 0;
+}

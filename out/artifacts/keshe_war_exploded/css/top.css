@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document 更多：http://www.bootstrapmb.com */
+
+*{ margin:0; padding:0}
+ul li{ list-style:none}
+a{ text-decoration:none}
+img{ border:0; max-height:100%; max-width:100%}
+body{ width:100%; min-width:1200px; margin:0 auto; font-size:12px; font-family:"宋体";color: #222;}
+.clear{ clear:both}
+
+.mainWarp{ width:1100px; margin:0 auto;}
+
+/*topDiv*/
+.topDiv{ width:100%; height:32px; background-color: #f6f6f6;}
+.topDiv .topLeft{ float:left; width:820px;height:32px; line-height:32px; overflow:hidden}
+.topDiv .topLeft span{ color:#000}
+.topDiv .topLeft a{ color: #7d7d7d;margin-right: 8px;}
+.topDiv .topRight{ float:right; width:280px;height:32px;line-height:32px; overflow:hidden;white-space: nowrap;text-overflow: ellipsis;}
+.topDiv .topRight span{color:#000}
+.topDiv .topRight a{ color: #1a5aa8;}
+
+

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#recruitInfo{
+    background-color: red;
+    margin-top: 50px;
+}
+#recruitInfo .recruitInfoWrite{
+    width: 1120px;
+    height: 700px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+#recruitInfo .recruitInfoWrite ul li{
+    margin-top: 25px;
+    font-size: 16px;
+}
+#recruitInfo .recruitInfoWrite ul{
+    position: absolute;
+    left: 47px;
+}
+#recruitInfo .recruitInfoWrite ul li input{
+    width: 351px;
+    height: 42px;
+}
+#recruitInfo .recruitInfoWrite ul li .releaseRecruitButton{
+    width: 150px;
+    height: 37px;
+    color: #fff;
+    background-color: #FF704F;
+    border-color: #FF704F;
+    border-radius: 3px;
+}

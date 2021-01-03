@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑;
+    list-style-type: none;
+}
+#personalInfo{
+    width: 1120px;
+    height: 850px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10px;
+}
+/* 修改个人资料 */
+#personalInfo .updatePersonalInfo{
+    width: 1120px;
+    height: 200px;
+    position: absolute;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 auto;
+    color: #e96c1f;
+}
+#personalInfo .updatePersonalInfo ul li{
+    font-size: 14px;
+    margin-top: 25px;
+    color: #666666;
+}
+#personalInfo .updatePersonalInfo ul li input{
+    width: 200px;
+    height: 30px;
+}
+#personalInfo .updatePersonalInfo ul li .modifyButton{
+    height: 40px;
+    width: 140px;
+    background-color: #ff552e;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 76px;
+    color: #FFFFFF;
+}

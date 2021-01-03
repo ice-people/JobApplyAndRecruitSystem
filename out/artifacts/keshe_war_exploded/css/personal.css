@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑;
+}
+#personal{
+    width: 1120px;
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid orangered;
+}
+
+#personal .uploadPicture{
+    width: 120px;
+    height: 120px;
+    background-color: skyblue;
+    border: 1px solid #dddddd;
+
+}
+
+#personal .uploadPicture .user_img{
+    width: 120px;
+    height: 120px;
+}
+
+/* 上传头像按钮 */
+#personal .uploadPicture .uploadButton{
+    background-color: pink;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ff552e;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 修改个人资料 */
+#personal .updatePersonalInfo{
+    width: 1120px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    font-weight: 600;
+    font-size: 20px;
+}
+#personal .updatePersonalInfo table{
+    font-size: 16px;
+    color: #9fa09a;
+}
+#personal .updatePersonalInfo table tr{
+    height: 60px;
+
+}
+#personal .updatePersonalInfo table tr td{
+    width: 400px;
+    text-align: left;
+}
+#personal .updatePersonalInfo table .modifyButton a{
+    color: #ff552e;
+    cursor: pointer;
+}
+
+/* 简历信息 */
+#personal .updateResume{
+    width: 1120px;
+    height: 300px;
+    position: absolute;
+    top: 500px;
+    font-weight: 600;
+    font-size: 20px;
+}
+#personal .updateResume table{
+    font-size: 16px;
+    color: #9fa09a;
+}
+#personal .updateResume table tr{
+    height: 40px;
+}
+#personal .updateResume table tr td{
+    text-align: left;
+}
+#personal .updateResume .state{
+    color:red;
+    font-weight: 500;
+}

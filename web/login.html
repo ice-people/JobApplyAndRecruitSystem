@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>招聘</title>
+
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Style -->
+	<link rel="stylesheet" href="../css/loginoregister.css" type="text/css" media="all" />
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script>
+		window.onload = function () {
+			/* 获取‘公司’单选按钮 */
+			var personalRadio = document.querySelector('input[value="公司"]');
+			personalRadio.onclick = function () {     // 点击‘个人’radio，跳转公司登录界面
+				location.href = 'companyLogin.html';
+			}
+		}
+		$(document).ready(function(){
+			var temp = $("#userNameInput")[0];
+			temp.blur(function () {
+				$.ajax({
+					url:'../ajax',
+					type:'post',
+					success:function (data) {
+						console.log(data);
+					}
+				})
+			})
+		});
+	</script>
+</head>
+
+<body>
+
+<section class="w3l-signup">
+	<div class="overlay">
+		<div class="wrapper">
+			<div class="logo">
+				<a class="brand-logo" href="index.html">招聘</a>
+			</div>
+			<div class="form-section">
+				<h3>登  录</h3>
+				<form action="../myLogin" method="post" class="signin-form">
+					<div class="form-input">
+						<input id="userNameInput" type="text" name="username" placeholder="用户名" required="" autofocus>
+					</div>
+					<div class="form-input">
+						<input id="emailInput" type="text" name="email" placeholder="邮箱" required="" autofocus>
+					</div>
+					<div class="form-input">
+						<input type="password" name="password" placeholder="密码" required="">
+					</div>
+					<div>
+						个人<input type="radio" name="user" value="个人" checked>
+						公司<input type="radio" name="user" value="公司">
+					</div>
+					<button type="submit" class="btn btn-primary theme-button mt-4">登&nbsp;&nbsp;&nbsp;录</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+</body>
+
+</html>

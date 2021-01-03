@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="../css/resumeAdd.css" />
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../js/login.js"></script>
+<title>添加简历</title>
+</head>
+
+<body>
+<div class="header">
+   <div class="mainwarp">
+      <div class="welcome">欢迎注册</div>
+      <div class="headerright">
+         <a href="../login.html">登录</a>
+         <span>|</span>
+         <a href="../register.html">注册 </a>
+         <span>|</span>
+         <a href="index.html">返回首页</a>
+      </div>
+   </div>
+</div>
+<div class="jianliBox">
+  <div class="jlpart2">
+      <form action="resumeBasicInfoAdd" method="post" enctype="application/x-www-form-urlencoded">
+          <div class="jlpart2_1">
+              <div class="jlbox2">
+                  <span class="tit">姓名</span>
+                  <input name="realName" type="text" class="txtcon txt1"/>
+              </div>
+              <div class="jlbox2">
+                  <span class="tit">我是</span>
+                  男<input type="radio" value="男" name="sex" style="margin-top: 10px;">
+                  女<input type="radio" value="女" name="sex">
+                  <div class="clear"></div>
+              </div>
+              <div class="jlbox2">
+                  <span class="tit">出生于</span>
+                  <input name="birthday" type="text" class="txtcon txt2" placeholder="2000-1-1"/>
+              </div>
+              <div class="jlbox2">
+                  <span class="tit">手机号</span>
+                  <input name="telephone" type="text" class="txtcon txt3"/>
+                  <div class="clear"></div>
+              </div>
+              <div class="jlbox2">
+                  <span class="tit">毕业学校</span>
+                  <input name="school" type="text" class="txtcon txt3"/>
+                  <input name="degree" type="text" class="txtcon txt5" list="degreelist"/>
+                  <datalist id="degreelist">
+                      <option value="本科以下"></option>
+                      <option value="本科"></option>
+                      <option value="研究生"></option>
+                      <option value="博士"></option>
+                  </datalist>
+                  <div class="titxt">学历</div>
+                  <div class="clear"></div>
+              </div>
+              <div class="jlbox2">
+                  <span class="tit">专业名称</span>
+                  <input name="profession" type="text" class="txtcon txt3"/>
+                  <div class="clear"></div>
+              </div>
+              <div class="jlbox2">
+                  <span class="tit">求职意向</span>
+                  <input name="jobIntention" type="text" class="txtcon txt2"/>
+              </div>
+              <div class="jlbox2">
+                  <span class="tit">工作经验</span>
+                  <input name="workExe" type="text" class="txtcon txt2" list="workExeList"/>
+                  <datalist id="workExeList">
+                      <option value="应届毕业生"></option>
+                      <option value="1年"></option>
+                      <option value="2年"></option>
+                      <option value="3年"></option>
+                      <option value="4年"></option>
+                      <option value="5年及以上"></option>
+                  </datalist>
+              </div>
+              <div class="jlbox2">
+                  <span class="tit">邮箱</span>
+                  <input name="email" type="text" class="txtcon txt3"/>
+                  <div class="clear"></div>
+              </div>
+              <div class="jlbox2">
+                  <input name="" type="submit" value="生成简历" class="jlbtn"/>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>
+
+<div class="clear"></div>
+</body>
+</html>

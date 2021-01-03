@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>招聘</title>
+
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Style -->
+	<link rel="stylesheet" href="css/loginoregister.css" type="text/css" media="all" />
+	<script>
+		window.onload = function () {
+			/* 获取‘公司’单选按钮 */
+			var personalRadio = document.querySelector('input[value="公司"]');
+			personalRadio.onclick = function () {     // 点击‘公司’radio，跳转公司注册界面
+				location.href = 'companyRegister.html';
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<!-- Signup form -->
+	<section class="w3l-signup">
+		<div class="overlay">
+			<div class="wrapper">
+				<div class="logo">
+					<a class="brand-logo" href="index.html">招聘</a>
+				</div>
+				<div class="form-section">
+					<h3>注  册</h3>
+					<form action="http://localhost:8080/Web_war_exploded/myRegister" method="post" class="signin-form">
+						<div class="form-input">
+							<input type="text" name="username" placeholder="用户名" required="" autofocus>
+						</div>
+						<div class="form-input">
+							<input type="email" name="email" placeholder="邮箱" required="" autofocus>
+						</div>
+						<div class="form-input">
+							<input type="password" name="password" placeholder="密码" required="">
+						</div>
+						<div>
+							个人<input type="radio" name="user" value="个人" checked>
+							公司<input type="radio" name="user" value="公司">
+						</div>
+						<button type="submit" class="btn btn-primary theme-button mt-4">注&nbsp;&nbsp;&nbsp;册</button>
+					</form><p class="signup">是否已经注册? <a href="login.html" class="signuplink">Login now</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+
+	<!-- /Signup form -->
+</body>
+
+</html>
