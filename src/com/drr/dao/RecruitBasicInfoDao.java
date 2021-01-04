@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RecruitBasicInfoDao {
-    private final int LIMIT = 3;
+    private final int LIMIT = 5;
 
     /* 获取指定行的数据 */
     public List<RecruitBasicInfo> findAll(Integer page) throws SQLException, IOException, ClassNotFoundException {

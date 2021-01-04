@@ -21,7 +21,9 @@ public class jobApplyFindServlet extends HttpServlet {
     private final  int LIMIT = 1;
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        // 设置响应和请求编码
+        req.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html;charset=UTF-8");
         /* 获取参数 */
         String jobType = req.getParameter("jobType");
         String workAddress = req.getParameter("workAddress");

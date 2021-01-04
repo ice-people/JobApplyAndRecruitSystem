@@ -47,11 +47,11 @@
         <table>
             <tr>
                 <td>用户名：${applicant.userName}</td>
-                <td class="modifyButton"><a href="jsp/personalInfoModify.jsp">修改</a></td>
+                <td class="modifyButton"><a href="personalInfoModify.jsp">修改</a></td>
             </tr>
             <tr>
                 <td>邮箱：${applicant.applicantEmail}</td>
-                <td class="modifyButton"><a href="jsp/personalInfoModify.jsp">修改</a></td>
+                <td class="modifyButton"><a href="personalInfoModify.jsp">修改</a></td>
             </tr>
             <tr>
                 <td>密码：${applicant.applicantPwd}</td>

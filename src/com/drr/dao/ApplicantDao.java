@@ -53,4 +53,37 @@ public class ApplicantDao {
         String sql = "insert into applicant(username,applicant_email,applicant_pwd,applicant_registerdata)values(?,?,?,?)";
         DBUtil.update(sql,userName,applicantEmail,applicantPwd, new Date(System.currentTimeMillis()));
     }
+
+    /* 根据用户名查询指定是否存在 */
+    public Applicant query(Object...args){
+        String sql = "select * from applicant where username=?";
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet resultSet = null;
+        Applicant applicant = null;
+        try {
+            // 获取连接
+            connection = GetSqlConnection.getConnection();
+            // 预编译sql语句
+            ps = connection.prepareStatement(sql);
+            // 填充占位符
+            for (int i = 0; i < args.length; i++) {
+                ps.setObject(i + 1, args[i]);
+            }
+            resultSet = ps.executeQuery();
+            while (resultSet.next()){
+                applicant = new Applicant(resultSet.getInt(1),resultSet.getString(2),resultSet.getString(3),resultSet.getString(4),resultSet.getDate(5));
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // 关闭资源
+            ExceptionCatch.closeResource(connection, ps);
+        }
+        return applicant;
+    }
 }

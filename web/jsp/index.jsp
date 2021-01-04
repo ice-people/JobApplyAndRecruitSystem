@@ -111,7 +111,8 @@
           <td>${recruitBasicInfo.workAddress}</td>
           <td>${recruitBasicInfo.jobDecription}</td>
           <td>
-            <a href="../sendResume?companyId=${recruitBasicInfo.companyId}&recruitBasicInfoID=${recruitBasicInfo.recruitBasicInfoID}">投递简历</a>
+
+
           </td>
         </tr>
       </c:forEach>

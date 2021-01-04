@@ -42,7 +42,7 @@ public class SendResumeServlet extends HttpServlet {
             PrintWriter writer = resp.getWriter();
             writer.write("<script>");
             writer.write("alert('简历投递成功');");
-            writer.write("window.location.href='/recruitBasicInfo?page=1'");
+            writer.write("window.location.href='../recruitBasicInfo?page=1'");
             writer.write("</script>");
             writer.flush();
             writer.close();
@@ -50,7 +50,7 @@ public class SendResumeServlet extends HttpServlet {
             PrintWriter writer = resp.getWriter();
             writer.write("<script>");
             writer.write("alert('简历投递失败');");
-            writer.write("window.location.href='/recruitBasicInfo?page=1'");
+            writer.write("window.location.href='../recruitBasicInfo?page=1'");
             writer.write("</script>");
             writer.flush();
             writer.close();

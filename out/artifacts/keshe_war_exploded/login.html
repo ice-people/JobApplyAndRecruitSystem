@@ -12,6 +12,7 @@
 
 	<!-- Style -->
 	<link rel="stylesheet" href="../css/loginoregister.css" type="text/css" media="all" />
+	<script src="js/jquery-1.4.2.min.js"></script>
 	<script>
 		window.onload = function () {
 			/* 获取‘公司’单选按钮 */
@@ -20,6 +21,22 @@
 				location.href = 'companyLogin.html';
 			}
 		}
+		$(document).ready(function(){
+			$("#userNameInput").blur(function () {
+				var name = $(this).val();
+				// alert(name);
+				$.ajax({
+					url:'/ajax',
+					data:'method=applicant&name=' + name,
+					type:'post',
+					dataType:'text',
+					success:function (data) {
+						alert(data);
+
+					}
+				})
+			})
+		});
 	</script>
 </head>
 
@@ -35,10 +52,10 @@
 				<h3>登  录</h3>
 				<form action="../myLogin" method="post" class="signin-form">
 					<div class="form-input">
-						<input type="text" name="username" placeholder="用户名" required="" autofocus>
+						<input id="userNameInput" type="text" name="username" placeholder="用户名" required="" autofocus>
 					</div>
 					<div class="form-input">
-						<input type="text" name="email" placeholder="邮箱" required="" autofocus>
+						<input id="emailInput" type="text" name="email" placeholder="邮箱" required="" autofocus>
 					</div>
 					<div class="form-input">
 						<input type="password" name="password" placeholder="密码" required="">

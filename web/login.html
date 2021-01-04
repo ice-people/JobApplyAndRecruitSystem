@@ -12,7 +12,7 @@
 
 	<!-- Style -->
 	<link rel="stylesheet" href="../css/loginoregister.css" type="text/css" media="all" />
-	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery-1.4.2.min.js"></script>
 	<script>
 		window.onload = function () {
 			/* 获取‘公司’单选按钮 */
@@ -22,13 +22,17 @@
 			}
 		}
 		$(document).ready(function(){
-			var temp = $("#userNameInput")[0];
-			temp.blur(function () {
+			$("#userNameInput").blur(function () {
+				var name = $(this).val();
+				// alert(name);
 				$.ajax({
-					url:'../ajax',
+					url:'/ajax',
+					data:'method=applicant&name=' + name,
 					type:'post',
+					dataType:'text',
 					success:function (data) {
-						console.log(data);
+						alert(data);
+
 					}
 				})
 			})

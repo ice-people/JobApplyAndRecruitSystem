@@ -82,14 +82,14 @@
     </div>
 </div>
 <div class="menuDiv">
-    <a href="/recruitBasicInfo?page=1" class="onnav">首页</a>
-    <a href="jobApply.jsp">找工作</a>
+    <a href="../recruitBasicInfo?page=1" class="onnav">首页</a>
+    <a href="javascript:void(0)">找工作</a>
     <a href="javascript:void(0)">收藏中心</a>
     <a href="personal.jsp">个人中心</a>
-    <a href="jobApplyInfoWrite.jsp">发布求职</a>
+    <a href="jsp/jobApplyInfoWrite.jsp">发布求职</a>
 </div>
 <div class="jobApplySearch">
-    <form action="jobApplyFind" method="post" enctype="application/x-www-form-urlencoded">
+    <form action="../jobApplyFind" method="post" enctype="application/x-www-form-urlencoded">
         <input type="text" placeholder="请选择职位类别" list="jobTypeList" name="jobType">
         <datalist id="jobTypeList">
             <option value="IT"></option>
@@ -179,7 +179,7 @@
                 <td>${recruitBasicInfo.workAddress}</td>
                 <td>${recruitBasicInfo.jobDecription}</td>
                 <td>
-                    <a href="/book?method=addBorrow&bookid=${book.id}">收藏</a>
+                    <a href="../sendResume?companyId=${recruitBasicInfo.companyId}&recruitBasicInfoID=${recruitBasicInfo.recruitBasicInfoID}">投递简历</a>
                 </td>
             </tr>
         </c:forEach>
